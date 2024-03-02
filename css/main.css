@@ -1,0 +1,204 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo {
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav {
+    margin: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+nav ul li a.active:before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(70, 48, 48);
+    bottom: -6px;
+    transition: width .3s;
+
+}
+
+main {
+    display: flex;
+    gap: 3rem;
+    margin-top: 5em;
+
+}
+
+.left-col {
+    width: 40%;
+}
+
+.right-col {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+.subhead {
+    font-size: 1.8rem;
+}
+
+.cta-btns {
+    margin: 3em 0em;
+    display: flex;
+}
+
+.cta-btns,
+.seconadry-cta {
+    display: flex;
+    gap: 2em;
+
+}
+
+.primary-cta {
+    background-color: #F1E2D1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 1.9em;
+    padding: 1em 2em;
+}
+
+.seconadry-cta {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 0;
+
+
+}
+
+.seconadry-cta svg {
+    width: 20px;
+    transition: transform .3s;
+
+}
+
+.news {
+
+    gap: 0.5em;
+    padding: 0.5em;
+    border: 0.2px solid black;
+    border-radius: .8em;
+    position: relative;
+
+}
+
+
+p.greet {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 100;
+}
+
+p.Message {
+    font-size: 1.8rem;
+    margin: 2em 0;
+
+}
+
+.right-col {
+    display: grid;
+    gap: 3.2;
+    grid-template-columns: repeat(2, auto);
+
+}
+
+
+.card1,
+.card-details {
+    background: white;
+    background-size: 100%;
+    border-radius: .6em;
+    padding: 1em 10em;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+}
+
+
+.card,
+.card-details a,
+.Explain-title {
+    color: rgb(51, 25, 25);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover:before {
+    width: 35%;
+}
+
+.primary-cta:hover {
+    background: #E2D1BD;
+}
+
+.seconadry-cta:hover svg {
+    transform: translateX(10px);
+}
+
+.seconadry-cta:hover {
+    text-decoration: underline;
+}
